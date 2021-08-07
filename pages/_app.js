@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import GlobalStyle from '../src/theme/GlobalStyle';
@@ -27,3 +28,13 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+App.propTypes = {
+  Component: PropTypes.element,
+  pageProps: PropTypes.element,
+};
+
+App.defaultProps = {
+  Component: PropTypes.element,
+  pageProps: PropTypes.element,
+};
