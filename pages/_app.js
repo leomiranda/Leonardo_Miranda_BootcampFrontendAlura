@@ -1,14 +1,7 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
 import Head from 'next/head'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
-  }
-`
+import GlobalStyle from '../src/components/theme/GlobalStyle'
 
 const theme = {
 	colors: {
@@ -32,8 +25,8 @@ export default function App({ Component, pageProps }) {
 					rel='stylesheet'
 				/>
 			</Head>
-			<GlobalStyle />
 			<ThemeProvider theme={theme}>
+				<GlobalStyle />
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</>
