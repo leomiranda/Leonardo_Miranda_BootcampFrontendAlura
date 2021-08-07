@@ -1,13 +1,8 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import Head from 'next/head'
-import GlobalStyle from '../src/components/theme/GlobalStyle'
-
-const theme = {
-	colors: {
-		primary: '#0070f3',
-	},
-}
+import GlobalStyle from '../src/theme/GlobalStyle'
+import theme from '../src/theme'
 
 export default function App({ Component, pageProps }) {
 	return (

@@ -10,8 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    /* font-family: ${({ theme }) => theme.fontFamily}; */
-    font-family: 'Fira Sans', sans-serif;
+    font-family: ${({ theme }) => theme.fontFamily};
   }
   /* Full height layout */
   html, body {
