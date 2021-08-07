@@ -17,7 +17,7 @@ const CoverWrapper = styled.section`
   }
 `;
 
-export default function Cover(props) {
+export default function Cover() {
   return (
     <CoverWrapper>
       <div>
