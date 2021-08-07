@@ -37,7 +37,7 @@ const colors = {
 	modes: {
 		dark: {},
 	},
-}
+};
 
 const breakpoints = {
 	xs: 0, // extra small
@@ -45,7 +45,7 @@ const breakpoints = {
 	md: 768, // medium
 	lg: 992, // large
 	xl: 1200, // extra large
-}
+};
 
 export default {
 	colors,
@@ -53,4 +53,4 @@ export default {
 	borderRadius: '8px',
 	fontFamily: "'Fira Sans', sans-serif",
 	transition: '200ms ease-in-out',
-}
+};

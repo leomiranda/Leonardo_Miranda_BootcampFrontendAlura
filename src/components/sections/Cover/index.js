@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const CoverWrapper = styled.section`
 	background-color: #000;
@@ -15,7 +15,7 @@ const CoverWrapper = styled.section`
 		flex-direction: column;
 		text-align: center;
 	}
-`
+`;
 
 export default function Cover(props) {
 	return (
@@ -25,5 +25,5 @@ export default function Cover(props) {
 				<h2>Frontend Developer</h2>
 			</div>
 		</CoverWrapper>
-	)
+	);
 }
