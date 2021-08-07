@@ -1,4 +1,4 @@
-import Cover from '../src/components/commons/Cover'
+import Cover from '../src/components/sections/Cover'
 
 export default function Home() {
 	return <Cover />
