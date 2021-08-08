@@ -12,7 +12,6 @@ const FooterWrapper = styled.div`
   background-color: #e9c46a;
   display: flex;
   align-items: center;
-  padding-
 `;
 
 export default function Footer() {
