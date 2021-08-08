@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../Header/index';
 
 const CoverWrapper = styled.section`
   background-color: #000;
@@ -27,7 +26,6 @@ export default function Cover() {
           <h2>Frontend Developer</h2>
         </div>
       </CoverWrapper>
-      <Header />
     </>
   );
 }
