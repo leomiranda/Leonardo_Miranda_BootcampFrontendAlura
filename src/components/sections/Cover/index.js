@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Header from '../Header/index';
 
 const CoverWrapper = styled.section`
   background-color: #000;
@@ -19,11 +20,14 @@ const CoverWrapper = styled.section`
 
 export default function Cover() {
   return (
-    <CoverWrapper>
-      <div>
-        <h1>Leo Miranda</h1>
-        <h2>Frontend Developer</h2>
-      </div>
-    </CoverWrapper>
+    <>
+      <CoverWrapper>
+        <div>
+          <h1>Leo Miranda</h1>
+          <h2>Frontend Developer</h2>
+        </div>
+      </CoverWrapper>
+      <Header />
+    </>
   );
 }
