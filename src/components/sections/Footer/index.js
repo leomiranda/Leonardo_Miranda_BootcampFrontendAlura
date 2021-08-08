@@ -13,8 +13,10 @@ const FooterWrapper = styled.div`
   background-color: #e9c46a;
   display: flex;
   align-items: center;
-
+  justify-content: center;
   a {
+    width: 32px;
+    height: 32px;
     font-size: 32px;
     color: #000;
     margin: 0 16px;
