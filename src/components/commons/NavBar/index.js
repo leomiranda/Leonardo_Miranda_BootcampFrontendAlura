@@ -28,7 +28,7 @@ const MenuList = styled.ul`
   }
 `;
 
-export default function Menu() {
+export default function NavBar() {
   const links = [
     {
       texto: 'Home',

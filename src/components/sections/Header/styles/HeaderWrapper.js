@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
 
-export const HeaderWrapper = styled.nav`
+export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +40,7 @@ HeaderWrapper.LeftSide = styled.div`
   })}
 `;
 
-HeaderWrapper.RightSide = styled.div`
+HeaderWrapper.RightSide = styled.ul`
   padding: 0;
   margin: 0;
   order: 2;

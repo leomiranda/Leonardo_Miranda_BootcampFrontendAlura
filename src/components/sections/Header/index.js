@@ -2,29 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { HeaderWrapper } from './styles/HeaderWrapper';
 import Logo from '../../../theme/Logo';
-import Menu from '../../commons/Menu';
-// import { Button } from '../Button';
-// import Text from '../../foundation/Text';
+import NavBar from '../../commons/NavBar';
 
-const HeaderBg = styled.div`
+const HeaderBg = styled.header`
   background-color: #e9c46a;
 `;
 
 export default function Header() {
-  const links = [
-    {
-      texto: 'Home',
-      url: '/',
-    },
-    {
-      texto: 'Sobre',
-      url: '/sobre',
-    },
-    {
-      texto: 'Contato',
-      url: '/contato',
-    },
-  ];
   return (
     <HeaderBg>
       <HeaderWrapper>
@@ -32,7 +16,7 @@ export default function Header() {
           <Logo />
         </HeaderWrapper.LeftSide>
         <HeaderWrapper.RightSide>
-          <Menu />
+          <NavBar />
         </HeaderWrapper.RightSide>
       </HeaderWrapper>
     </HeaderBg>
