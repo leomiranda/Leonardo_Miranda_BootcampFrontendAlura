@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { HeaderWrapper } from './styles/HeaderWrapper';
 import Logo from '../../../theme/Logo';
+import Menu from '../../commons/Menu';
 // import { Button } from '../Button';
 // import Text from '../../foundation/Text';
 
@@ -31,13 +32,7 @@ export default function Header() {
           <Logo />
         </HeaderWrapper.LeftSide>
         <HeaderWrapper.RightSide>
-          {links.map((link) => (
-            <li key={link.url}>
-              <a tag="a" href={link.url}>
-                {link.texto}
-              </a>
-            </li>
-          ))}
+          <Menu />
         </HeaderWrapper.RightSide>
       </HeaderWrapper>
     </HeaderBg>

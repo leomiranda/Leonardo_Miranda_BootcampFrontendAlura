@@ -40,35 +40,13 @@ HeaderWrapper.LeftSide = styled.div`
   })}
 `;
 
-HeaderWrapper.RightSide = styled.ul`
+HeaderWrapper.RightSide = styled.div`
   padding: 0;
   margin: 0;
-  order: 3;
+  order: 2;
   width: 100%;
-  list-style: none;
   display: flex;
   flex: 1;
   order: 2;
   justify-content: flex-end;
-  gap: 38px;
-
-  a {
-    text-align: center;
-    display: block;
-    text-decoration: none;
-    color: #000;
-    transition: 200ms ease-in-out;
-    ${breakpointsMedia({
-      xs: css`
-        font-size: 16px;
-      `,
-      md: css`
-        font-size: 18px;
-      `,
-    })}
-    &:hover,
-    &:focus {
-      color: #fff;
-    }
-  }
 `;
