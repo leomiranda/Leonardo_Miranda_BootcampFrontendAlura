@@ -23,5 +23,12 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
+
+  /* Customs */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: ${({ theme }) => theme.fontFamilyHeaders};
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 `;
 export default GlobalStyle;

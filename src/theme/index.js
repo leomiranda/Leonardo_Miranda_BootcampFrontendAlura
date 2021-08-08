@@ -52,5 +52,6 @@ export default {
   breakpoints,
   borderRadius: '8px',
   fontFamily: "'Fira Sans', sans-serif",
+  fontFamilyHeaders: "'Fira Sans Condensed', sans-serif;",
   transition: '200ms ease-in-out',
 };
