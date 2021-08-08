@@ -4,13 +4,12 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const FooterBg = styled.footer`
   height: 68px;
-  background-color: #000;
+  background-color: #fff8e6;
   display: flex;
   justify-content: center;
 `;
 
 const FooterWrapper = styled.div`
-  background-color: #e9c46a;
   display: flex;
   align-items: center;
   justify-content: center;
