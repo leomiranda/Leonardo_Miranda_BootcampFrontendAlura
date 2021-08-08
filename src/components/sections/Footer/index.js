@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const FooterBg = styled.footer`
   height: 68px;
@@ -12,15 +13,34 @@ const FooterWrapper = styled.div`
   background-color: #e9c46a;
   display: flex;
   align-items: center;
+
+  a {
+    font-size: 32px;
+    color: #000;
+    margin: 0 16px;
+  }
 `;
 
 export default function Footer() {
   return (
     <FooterBg>
       <FooterWrapper>
-        <span>ico 1</span>
-        <span>ico 2</span>
-        <span>ico 3</span>
+        <a
+          tag="a"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/leomiranda"
+        >
+          <FaGithub />
+        </a>
+        <a
+          tag="a"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/leonardomir/"
+        >
+          <FaLinkedin />
+        </a>
       </FooterWrapper>
     </FooterBg>
   );
