@@ -5,6 +5,7 @@ import WrapperProjects from '../src/components/sections/WrapperProjects/index';
 import Footer from '../src/components/sections/Footer/index';
 import { Main } from '../src/components/sections/Main/index';
 import { Box } from '../src/components/layout/Box/index';
+import { Grid } from '../src/components/layout/Grid/index';
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
       <Cover />
       <Header />
       <Main>
-        <WrapperProjects />
+        <Grid.Container>
+          <WrapperProjects />
+        </Grid.Container>
       </Main>
       <Footer />
     </Box>
