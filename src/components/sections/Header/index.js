@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HeaderWrapper } from './styles/HeaderWrapper';
-// import { Logo } from '../../../theme/Logo';
+import Logo from '../../../theme/Logo';
 // import { Button } from '../Button';
 // import Text from '../../foundation/Text';
 
@@ -27,7 +27,9 @@ export default function Header() {
   return (
     <HeaderBg>
       <HeaderWrapper>
-        <HeaderWrapper.LeftSide>&lt; eo</HeaderWrapper.LeftSide>
+        <HeaderWrapper.LeftSide>
+          <Logo />
+        </HeaderWrapper.LeftSide>
         <HeaderWrapper.RightSide>
           {links.map((link) => (
             <li key={link.url}>
