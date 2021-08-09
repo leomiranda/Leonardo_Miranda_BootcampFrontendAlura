@@ -5,23 +5,14 @@ import WrapperProjects from '../src/components/sections/WrapperProjects/index';
 import Footer from '../src/components/sections/Footer/index';
 import { Main } from '../src/components/sections/Main/index';
 import { Box } from '../src/components/layout/Box/index';
-import { Grid } from '../src/components/layout/Grid/index';
 
 export default function Home() {
   return (
-    <Box
-      flex="1"
-      display="flex"
-      flexWrap="wrap"
-      flexDirection="column"
-      justifyContent="space-between"
-    >
+    <Box>
       <Cover />
       <Header />
       <Main>
-        <Grid.Container>
-          <WrapperProjects />
-        </Grid.Container>
+        <WrapperProjects />
       </Main>
       <Footer />
     </Box>

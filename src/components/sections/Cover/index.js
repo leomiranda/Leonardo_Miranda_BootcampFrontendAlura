@@ -7,8 +7,8 @@ const CoverWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 300px;
-  height: 50%;
+  height: 400px;
+  flex: 0 1 auto;
 
   div {
     display: flex;

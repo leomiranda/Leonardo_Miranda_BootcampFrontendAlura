@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 
 const HeaderBg = styled.header`
   background-color: #e9c46a;
+  flex: 0 1 auto;
 `;
 
 export default function Header() {

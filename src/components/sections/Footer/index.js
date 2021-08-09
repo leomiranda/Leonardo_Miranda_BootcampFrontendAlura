@@ -6,6 +6,7 @@ const FooterBg = styled.footer`
   height: 68px;
   background-color: #fff8e6;
   display: flex;
+  flex: 0 1 60px;
   justify-content: center;
 `;
 
