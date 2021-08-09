@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const CardTextWrapper = styled.h3`
+const CardTextWrapper = styled.p`
   padding: 0 15px;
+  font-size: 18px;
 `;
 
-export default function CardTitle({ text }) {
+export default function CardText({ text }) {
   return <CardTextWrapper>{text}</CardTextWrapper>;
 }
 
-CardTitle.propTypes = {
+CardText.propTypes = {
   text: PropTypes.string.isRequired,
 };

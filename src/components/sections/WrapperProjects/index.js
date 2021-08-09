@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionTitle } from '../../typography/SectionTitle/index';
+import SectionTitle from '../../typography/SectionTitle/index';
 import Card from '../../commons/Card/index';
 import { Grid } from '../../layout/Grid/index';
 
@@ -37,11 +37,13 @@ export default function WrapperProjects() {
       <Grid.Row>
         <Grid.Col value="12">
           <Card
-            img="https://picsum.photos/id/1/800/600"
+            img="https://picsum.photos/id/1/800/300"
             imgAlt="The guy programing on the notebook"
             title="Project Featured"
             text="Lorem ipsum dolor sit amet, consectetur adip. Cum societes natoque
+        penatibus et justo. Lorem ipsum dolor sit amet, consectetur adip. Cum societes natoque
         penatibus et justo."
+            featured
           />
         </Grid.Col>
       </Grid.Row>

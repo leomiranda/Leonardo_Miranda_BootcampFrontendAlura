@@ -1,7 +1,9 @@
+import React from 'react';
 import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
-export const SectionTitle = styled.h3`
+const SectionTitleWrapper = styled.h3`
   text-transform: uppercase;
   font-size: 36px;
   text-align: center;
@@ -13,3 +15,11 @@ export const SectionTitle = styled.h3`
     `,
   })}
 `;
+
+export default function SectionTitle({ children }) {
+  return <SectionTitleWrapper>{children}</SectionTitleWrapper>;
+}
+
+SectionTitle.propTypes = {
+  children: PropTypes.node.isRequired,
+};

@@ -1,9 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import CardImage from './CardImage/index';
 import CardTitle from './CardTitle/index';
 import CardText from './CardText/index';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 const CardWrapper = styled.div`
   background-color: white;
@@ -18,14 +19,22 @@ const CardWrapper = styled.div`
       filter: contrast(100%);
     }
   }
+  ${(props) =>
+    props.featured
+      ? breakpointsMedia({
+          md: css`
+            flex-direction: row;
+          `,
+        })
+      : ''};
 `;
 
-export default function Card({ img, imgAlt, title, text }) {
+export default function Card({ img, imgAlt, title, text, featured }) {
   return (
-    <CardWrapper>
-      <CardImage img={img} imgAlt={imgAlt} />
-      <CardTitle title={title} />
-      <CardText text={text} />
+    <CardWrapper featured={featured}>
+      <CardImage img={img} imgAlt={imgAlt} featured={featured} />
+      <CardTitle title={title} featured={featured} />
+      {featured && <CardText text={text} featured={featured} />}
     </CardWrapper>
   );
 }
@@ -35,10 +44,12 @@ Card.propTypes = {
   imgAlt: PropTypes.string,
   title: PropTypes.string,
   text: PropTypes.string,
+  featured: PropTypes.bool,
 };
 
 Card.defaultProps = {
   imgAlt: '',
   title: '',
   text: '',
+  featured: false,
 };

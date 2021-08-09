@@ -6,8 +6,6 @@ import GlobalStyle from '../src/theme/GlobalStyle';
 import theme from '../src/theme';
 
 export default function App({ Component, pageProps }) {
-  console.log('component', Component);
-  console.log('pageProps', typeof pageProps);
   return (
     <>
       <Head>
@@ -33,7 +31,7 @@ export default function App({ Component, pageProps }) {
 
 App.propTypes = {
   Component: PropTypes.elementType,
-  pageProps: PropTypes.objectOf(PropTypes.object),
+  pageProps: PropTypes.objectOf(PropTypes.object) || PropTypes.number,
 };
 
 App.defaultProps = {
